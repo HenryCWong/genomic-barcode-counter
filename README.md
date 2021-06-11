@@ -18,7 +18,7 @@ If the user is analyzing different runs, the user can use this script to combine
 Runs one fastq file
 
 **runAll.sh**
-Runs all fastq files in the specified directory.
+Runs all fastq files in the specified directory and runs `combineFiles.jl` to merge all files into one tsv file.
 
 ## Requirements
 julia v1.4.3
