@@ -30,7 +30,8 @@ julia v1.4.3
 - FASTX v1.1.3
 - Glob v.1.3.0  (onlyi used in combineFiles.jl)
 
-#Tools
+# Tools
+
 ## barcodeCounter
 Consists of the scripts `barcodeCounter.jl` and `barcodeCounterFuncts.jl`.
 To run this tool you will need to call the `barcodeCounter.jl` script.
