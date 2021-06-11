@@ -24,11 +24,11 @@ Runs all fastq files in the specified directory.
 julia v1.4.3
 
 ### Julia Packages
-CSV v.0.8.4 (only used in combineFiles.jl)
-DataFrames v1.1.1 (only used in combineFiles.jl)
-DelimitedFiles
-FASTX v1.1.3
-Glob v.1.3.0  (onlyi used in combineFiles.jl)
+- CSV v.0.8.4 (only used in combineFiles.jl)
+- DataFrames v1.1.1 (only used in combineFiles.jl)
+- DelimitedFiles
+- FASTX v1.1.3
+- Glob v.1.3.0  (onlyi used in combineFiles.jl)
 
 #Tools
 ## barcodeCounter
