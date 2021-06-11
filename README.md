@@ -20,8 +20,8 @@ Runs one fastq file
 **runAll.sh**
 Runs all fastq files in the specified directory.
 
-##Requirements
-julia v1.6.1
+## Requirements
+julia v1.4.3
 
 ### Julia Packages
 CSV v.0.8.4 (only used in combineFiles.jl)
