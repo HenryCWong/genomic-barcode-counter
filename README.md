@@ -55,7 +55,7 @@ The TSV that is output has the following columns:
 1. barcode sequence
 2. barcode name
 3. first file count results
-
-n. n'th file count results
+...
+\tn. n'th file count results
 
 Therefore, there will be a total of n+3 columns where n is the number of `.count` files in the directory. 
