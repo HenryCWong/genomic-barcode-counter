@@ -3,7 +3,7 @@ A julia script that counts the number of barcodes (given as input) from fastq fi
 
 
 ## Introduction
-This respository consists of 3 scripts and 2 tools. I have also provided 2 run shell scripts. 
+This respository consists of 3 scripts and 2 tools. I have also provided 2 shell scripts to run these tools. 
 
 **barcodeCounter.jl**
 A script that simply calls the fucntions in barcodeCountFuncts.jl to create an output file that contains the counts of each barcode identified in the barcode library provided to it. 
@@ -15,10 +15,10 @@ Contains helper functions for barcodeCounter.
 If the user is analyzing different runs, the user can use this script to combine all the `*.counts` files created by the `barcodeCounter.jl` script to form one singular count. The output is in a `.tsv` format made from a dataframe. 
 
 **run.sh**
-Runs one fastq file
+Runs `barcodeCounter` on one fastq file.
 
 **runAll.sh**
-Runs all fastq files in the specified directory and runs `combineFiles.jl` to merge all files into one tsv file.
+Runs `barcodeCounter` on all fastq files in the specified directory and runs `combineFiles.jl` to merge all files into one tsv file.
 
 ## Requirements
 julia v1.4.3
@@ -30,9 +30,9 @@ julia v1.4.3
 - FASTX v1.1.3
 - Glob v.1.3.0  (onlyi used in combineFiles.jl)
 
-# Tools
+## Tools
 
-## barcodeCounter
+### barcodeCounter
 Consists of the scripts `barcodeCounter.jl` and `barcodeCounterFuncts.jl`.
 To run this tool you will need to call the `barcodeCounter.jl` script.
 
@@ -48,9 +48,8 @@ After the script runs successfully, the script outputs a `.counts` file in a tsv
 
 If you want to run the script without the provided run script, look at `run.sh`. 
 
-##combineFiles
-Combines all `.count` files into a singular TSV. 
-> `combineFiles.jl` will combine all the scripts inside of the directory of which it is called. 
+### combineFiles
+Combines all `.count` files into a singular TSV. `combineFiles.jl` will combine all the scripts inside of the directory of which it is called. 
 
 The TSV that is output has the following columns: 
 1. barcode sequence
